@@ -4,11 +4,12 @@
 
 {% block body %}
 
-    {% for disc in discs %}
+<h1>panier</h1>
+    {% for i, produit in nouveau_panier %}
     
     <div>
-        {{ disc.title }}
-        <a href="/add/{{disc.id}}">ajouter au panier</a>
+        {{ produit.title }}
+        {{ panier[produit.id] }}
     </div>
     {% endfor %}
 

@@ -11,6 +11,11 @@
         {% endblock %}
     </head>
     <body>
+        <div>
+            <a href="/panier">
+                panier ({{app.session.get("panier") | length}})
+            </a>
+        </div>
         {% block body %}{% endblock %}
     </body>
 </html>
